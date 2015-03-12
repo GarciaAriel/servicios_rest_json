@@ -28,10 +28,21 @@
     
     <load-on-startup>1</load-on-startup>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>Jersey REST Service</servlet-name>
     <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
+  
+  <filter>
+   <filter-name>CorsFilter</filter-name>
+   <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+ </filter>
+ 
+ <filter-mapping>
+   <filter-name>CorsFilter</filter-name>
+   <url-pattern>/*</url-pattern>
+ </filter-mapping>
   
 </web-app>
 

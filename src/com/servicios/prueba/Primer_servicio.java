@@ -5,6 +5,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/v1")
 public class Primer_servicio {
+	
 	@Path("/status")
 	@GET
 	@Produces(MediaType.TEXT_HTML)
@@ -33,5 +34,21 @@ public class Primer_servicio {
 		return track;
  
 	}
+	
+//	@Path("/getmail")
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public Mail getMailInJSON() {
+//		
+//		
+//		Mail newMail = new Mail("me","to" , "cc", "bcc", "subject", "detail", "priority");
+//		
+////		Track track = new Track();
+////		track.setTitle("Enter Sandman");
+////		track.setSinger("Metallica");
+// 
+//		return newMail;
+// 
+//	}
 	
 }
