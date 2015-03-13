@@ -13,10 +13,11 @@ public class Mail {
 	String Detail;
 	String Priority;
 	String Foto = "https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
+	String folder;
  
 	//emplate ????
 	
-	public Mail(int id,String from, String [] to, String[]  cc,String[]  bcc,String subject,String detail,String priority)
+	public Mail(int id,String from, String [] to, String[]  cc,String[]  bcc,String subject,String detail,String priority,String folder)
 	{
 		this.Id = id;
 		this.From = from;
@@ -26,7 +27,15 @@ public class Mail {
 		this.Subject = subject;
 		this.Detail = detail;
 		this.Priority = priority;
-		
+		this.folder=folder;
+	}
+	
+	public String getFolder() {
+		return folder;
+	}
+ 
+	public void setFolder(String title) {
+		this.folder = title;
 	}
 	
 	public int getId() {
