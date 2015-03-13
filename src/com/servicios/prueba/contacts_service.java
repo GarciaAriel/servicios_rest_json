@@ -8,7 +8,8 @@ public class contacts_service {
 	
 	public String [] of = new String [4];
 	public int [] numbers = new int [4];
-	//public String [] bcc = new String [4];
+	
+	public String fotos;
 	
 	@Path("/get")
 	@GET
@@ -28,16 +29,31 @@ public class contacts_service {
 		/*bcc[0] = "pedro";
 		bcc[1] = "jaime";
 		bcc[2] = "juan";*/
+		fotos ="https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png";
+//		fotos[1]="https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
+//		fotos[2]="https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg";
+//		fotos[3]="https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg";
+//		fotos[4]="https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png";
+//		fotos[5]="https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
+//		fotos[6]="https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg";
 		
 		
-		Contacts Contact1 = new Contacts(0,"Ortega, Julien", of, "country", 591, "city", numbers);
-		Contacts Contact2 = new Contacts(0,"Franco, Mauricio", of, "country", 591, "city", numbers);
-		Contacts Contact3 = new Contacts(0,"Garcia, Ariel", of, "country", 591, "city", numbers);
 		
-		Contacts[] contacts = new Contacts[3];
+		Contacts Contact1 = new Contacts(0,"Ortega, Julien", of, "Francia", 000, "city", numbers,fotos);
+		Contacts Contact2 = new Contacts(1,"Franco, Mauricio", of, "Bolivia", 591, "Cbba", numbers,fotos);
+		Contacts Contact3 = new Contacts(2,"Garcia, Ariel", of, "Boliva", 591, "cbba", numbers,fotos);
+
+		Contacts Contact4 = new Contacts(3,"Ortega, Julien", of, "Francia", 000, "city", numbers,fotos);
+		Contacts Contact5 = new Contacts(4,"Franco, Mauricio", of, "Bolivia", 591, "Cbba", numbers,fotos);
+		Contacts Contact6 = new Contacts(5,"Garcia, Ariel", of, "Boliva", 591, "cbba", numbers,fotos);
+		
+		Contacts[] contacts = new Contacts[6];
 		contacts[0] = Contact1;
 		contacts[1] = Contact2;
 		contacts[2] = Contact3;
+		contacts[3] = Contact4;
+		contacts[4] = Contact5;
+		contacts[5] = Contact6;
 		
 //		Track track = new Track();
 //		track.setTitle("Enter Sandman");

@@ -12,11 +12,14 @@ public class Contacts {
 //	String  Bcc;
 	String city;
 	int [] numbers;
-	String foto = "https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
+	String foto;
+	
+	
+	/*"https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg"*/
  
 	//emplate ????
 	
-	public Contacts(int id,String name, String [] of, String country,int zip,String city, int [] numbers)
+	public Contacts(int id,String name, String [] of, String country,int zip,String city, int [] numbers,String foto)
 	{
 		this.Id = id;
 		this.name = name;
