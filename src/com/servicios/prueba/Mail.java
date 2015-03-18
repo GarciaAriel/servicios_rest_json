@@ -14,11 +14,13 @@ public class Mail {
 	String Priority;
 	String Foto = "https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
 	String folder;
+	String see;
  
 	//emplate ????
 	
-	public Mail(int id,String from, String [] to, String[]  cc,String[]  bcc,String subject,String detail,String priority,String folder)
+	public Mail(int id,String from, String [] to, String[]  cc,String[]  bcc,String subject,String detail,String priority,String folder,String see)
 	{
+		this.see = see;
 		this.Id = id;
 		this.From = from;
 		this.To = to;
@@ -28,6 +30,14 @@ public class Mail {
 		this.Detail = detail;
 		this.Priority = priority;
 		this.folder=folder;
+	}
+	
+	public String getSee() {
+		return see;
+	}
+ 
+	public void setSee(String title) {
+		this.see = title;
 	}
 	
 	public String getFolder() {
