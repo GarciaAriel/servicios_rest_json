@@ -9,7 +9,9 @@ public class contacts_service {
 	public String [] of = new String [4];
 	public int [] numbers = new int [4];
 	
-	public String fotos;
+	public String foto1;
+	public String foto2;
+	public String foto3;
 	
 	@Path("/get")
 	@GET
@@ -29,7 +31,9 @@ public class contacts_service {
 		/*bcc[0] = "pedro";
 		bcc[1] = "jaime";
 		bcc[2] = "juan";*/
-		fotos ="https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png";
+		foto1 ="http://www.mobygames.com/images/i/26/09/650109.png";
+		foto2 ="https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg";
+		foto3 ="https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
 //		fotos[1]="https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
 //		fotos[2]="https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg";
 //		fotos[3]="https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg";
@@ -39,13 +43,13 @@ public class contacts_service {
 		
 		
 		
-		Contacts Contact1 = new Contacts(0,"Ortega, Julien", of, "Francia", 000, "city", numbers,fotos);
-		Contacts Contact2 = new Contacts(1,"Franco, Mauricio", of, "Bolivia", 591, "Cbba", numbers,fotos);
-		Contacts Contact3 = new Contacts(2,"Garcia, Ariel", of, "Boliva", 591, "cbba", numbers,fotos);
+		Contacts Contact1 = new Contacts(0,"Electronic Arts", of, "Francia", 000, "city", numbers,foto1,"company");
+		Contacts Contact2 = new Contacts(1,"Ortega, Julien", of, "Bolivia", 591, "Cbba", numbers,foto2,"person");
+		Contacts Contact3 = new Contacts(2,"Franco, Mauricio", of, "Boliva", 591, "cbba", numbers,foto3,"secret");
 
-		Contacts Contact4 = new Contacts(3,"Ortega, Julien", of, "Francia", 000, "city", numbers,fotos);
-		Contacts Contact5 = new Contacts(4,"Franco, Mauricio", of, "Bolivia", 591, "Cbba", numbers,fotos);
-		Contacts Contact6 = new Contacts(5,"Garcia, Ariel", of, "Boliva", 591, "cbba", numbers,fotos);
+		Contacts Contact4 = new Contacts(3,"Ortega, Julien", of, "Francia", 000, "city", numbers,foto2,"person");
+		Contacts Contact5 = new Contacts(4,"Electronic Arts", of, "Bolivia", 591, "Cbba", numbers,foto1,"company");
+		Contacts Contact6 = new Contacts(5,"Franco, Mauricio", of, "Boliva", 591, "cbba", numbers,foto3,"secret");
 		
 		Contacts[] contacts = new Contacts[6];
 		contacts[0] = Contact1;

@@ -13,13 +13,13 @@ public class Contacts {
 	String city;
 	int [] numbers;
 	String foto;
-	
+	String type;
 	
 	/*"https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg"*/
  
 	//emplate ????
 	
-	public Contacts(int id,String name, String [] of, String country,int zip,String city, int [] numbers,String foto)
+	public Contacts(int id,String name, String [] of, String country,int zip,String city, int [] numbers,String foto,String type)
 	{
 		this.Id = id;
 		this.name = name;
@@ -29,6 +29,7 @@ public class Contacts {
 		this.city = city;
 		this.numbers = numbers;
 		this.foto = foto;
+		this.type = type;
 		
 	}
 	
@@ -89,6 +90,13 @@ public class Contacts {
 	public int[] getnumbers() {
 		return numbers;
 	}
+	
+	public void settype(String title) {
+		this.type = title;
+	}
+	public String getType() {
+		return type;
+	}
  
 	/*public void setPriority(String title) {
 		this.Priority = title;
@@ -100,7 +108,7 @@ public class Contacts {
  
 	@Override
 	public String toString() {
-		return "Contacts [Id="+Id+", name=" + name + ", of=" + of + ", country="+ country +", zip="+zip+", city="+ city +", numbers="+numbers+", foto="+foto+"]";
+		return "Contacts [Id="+Id+", name=" + name + ", of=" + of + ", country="+ country +", zip="+zip+", city="+ city +", numbers="+numbers+", foto="+foto+", type="+type+"]";
 	}
  
 }
