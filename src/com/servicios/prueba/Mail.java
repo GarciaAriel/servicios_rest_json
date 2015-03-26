@@ -6,15 +6,13 @@ public class Mail {
 	String [] To;
 	String [] Cc;
 	String [] Bcc;
-//	String  To;
-//	String  Cc;
-//	String  Bcc;
 	String Subject;
 	String Detail;
 	String Priority;
 	String Foto = "https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg";
 	String folder;
 	String see;
+	
  
 	//emplate ????
 	
@@ -30,6 +28,7 @@ public class Mail {
 		this.Detail = detail;
 		this.Priority = priority;
 		this.folder=folder;
+		
 	}
 	
 	public String getSee() {
